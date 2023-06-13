@@ -2,8 +2,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
  */
-
 package br.unipar.sistemabancario;
+
 import br.unipar.sistemabancario.model.ContaBancaria;
 import javax.swing.JOptionPane;
 
@@ -13,14 +13,10 @@ import javax.swing.JOptionPane;
  */
 public class SistemaBancario {
 
-     
-
-/**
- *
- * @author vinid
- */
-
-
+    /**
+     *
+     * @author vinid
+     */
     public static void main(String[] args) {
 
         final int maximo_contas = 1000000;
@@ -249,7 +245,7 @@ public class SistemaBancario {
     }
 
     public static double calcularSaldoTotal(ContaBancaria[] contas, int numContas) {
-        
+
         if (numContas == 0) {
             return 0.0;
         } else {
@@ -265,11 +261,11 @@ public class SistemaBancario {
     }
 
     public static boolean verificarSaldoNegativo(ContaBancaria[] contas, int numContas) {
-       
+
         if (numContas == 0) {
             return false;
         } else {
-           
+
             boolean saldoNegativoRestante = verificarSaldoNegativo(contas, numContas - 1);
 
             // Verificar saldo da conta atual
